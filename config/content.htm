@@ -83,6 +83,13 @@
 <p>在 Windows 編輯 waitress_server.py, 之後存為 server.py, 再送回 repo 目錄下.</p>
 <p>編輯過程在填入個人帳號所配發的 9 字頭的埠號.</p>
 <p>ssh 遠端登入到 repo 目錄下, 執行 hupper3 -m server.py 測試是否已經以<span> </span><a href="https://stud2.cycu.org/">https://stud2.cycu.org:</a>8字頭的埠號. 若可以連結, 必須馬上更改登入密碼.</p>
+<h2>w14 </h2>
+<h2>w15</h2>
+<p><span>w15 在 Replit 建立空倉儲 (git init), 以 git submodule add 將 </span><a href="https://github.com/mdecycu/cmsimde">https://github.com/mdecycu/cmsimde</a><span><span> </span>設為子模組, 然後再設法與 Github 上的空倉儲進行對應 (git remote add), 以便能在 Replit 執行動態網站編輯網頁內容, 並轉為靜態網站後傳送到 Github Pages 網站, 但必須注意 config/config, venv 以及 __pycache__ 等目錄與檔案必須利用 .gitignore 設定, 不要提交推送到 Github Pages.</span></p>
+<h2><span>w16</span></h2>
+<p>w16 則可以反向利用已經建立 cmsimde 網站的倉儲 (使用<span> </span><a href="https://github.com/mdecycu/cmsite">cmsite</a><span> </span>或<span> </span><a href="https://github.com/mdecycu/cmsimde_site">cmsimde_site</a><span> </span>(or<span> </span><a href="https://github.com/scrum-3/cmsimde_site">cmsimde_site</a>) 作為 template), 以 import 的方式導入 Replit 後執行動態網站, 也可以達到利用 Replit 維護 Github Pages 網站的目的. 但必須特別注意, 首次從 github import 倉儲至 Replit, 必須點選連結 Replit 與 Github 授權後才可順利完成兩個網站的導入與內容維護. 之後的網站維護必須利用 Replit Tools 中的 Git 工具完成 git add 與 commit, 然後才能在 Shell 執行 git push, 與 w15 的差異為無需自行設定 .git/config 中的授權 token, 而是透過 Replilt 與 Github 帳號間的授權進行兩端資料的同步.</p>
+<p>利用 Replit 與 Github 進行動態網站與靜態網站的整合:</p>
+<p>w16: <a href="https://w16.scrum3.repl.co/">https://w16.scrum3.repl.co</a><a><span> </span>(</a><a href="https://github.com/scrum-3/w16">https://github.com/scrum-3/w16</a>, <a href="https://scrum-3.github.io/w16">https://scrum-3.github.io/w16</a>)</p>
 <h1>Brython</h1>
 <p>href="https://en.wikipedia.org/wiki/Python_(programming_language)"&gt;https://en.wikipedia.org/wiki/Python_(programming_language)</p>
 <h4>Examples:</h4>
